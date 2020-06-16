@@ -101,11 +101,41 @@ a:hover, a:active {
 <br/>
 <br/>
 
-<video width="850" controls>
-  <source src="video/ Restaurant" type="video/mp4">
-  <source src="mp4/Restaurant.mp4" type="video/mp4">
+<div style="text-align:center">
+  <button onclick="playPause()">Play/Pause</button>
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video id="video1" width="420">
+    <source src="video/ Restaurant" type="video/mp4">
+    <source src="mp4/Restaurant.mp4" type="video/mp">
     Your browser does not support HTML video.
-</video>
+  </video>
+</div>
+
+<script>
+var myVideo = document.getElementById("video1");
+
+function playPause() {
+  if (myVideo.paused)
+    myVideo.play();
+  else
+    myVideo.pause();
+}
+
+function makeBig() {
+    myVideo.width = 1180;
+}
+
+function makeSmall() {
+    myVideo.width = 620;
+}
+
+function makeNormal() {
+    myVideo.width = 850;
+}
+</script>
 
 <img src="https://admin.restograf.ro/uploads/1557235802.jpeg" alt="Wrestograf.ro" width="550" height="425">
 
@@ -170,10 +200,7 @@ body {
 }
 </style>
 
-<h1><mark><i><ins>Sper <mark>ca <mark>va <mark>placut <mark>siteul.<mark></h1></i></ins></h1>
-  <p style="font-size:150px">
-&#128512;
-</p>
+<p>Acesta de mai jos este un calculator.</p>
 
 <form action="/action_page.php"
 oninput="x.value=parseInt(a.value)+parseInt(b.value)">
@@ -186,5 +213,15 @@ oninput="x.value=parseInt(a.value)+parseInt(b.value)">
   <br><br>
 </form>
 
+<h1><mark><i><ins>Sper <mark>ca <mark>va <mark>placut <mark>siteul.<mark></h1></i></ins></h1>
+  <p style="font-size:150px">
+&#128512;
+</p>
+
+<p>Sincer eu am invatat HTML,CSS,JAVASCRIPT,SQL etc.de pe acest site vizitatil.</p>
+
+<p><a href="https://www.w3schools.com/default.asp" >Click me</a></p>
+
     </body>
   </html>
+
